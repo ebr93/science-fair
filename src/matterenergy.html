@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="container text-bg-light py-4">
+        <!-- Nav -->
+        <header class="p-3 text-bg-light">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none">
+                  <!-- have to modify pic -->
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="./index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="./earthspace.html" class="nav-link px-2 text-black">Earth/Space</a></li>
+                  <li><a href="./forcemotion.html" class="nav-link px-2 text-black">Force/Motion</a></li>
+                  <li><a href="./organisms.html" class="nav-link px-2 text-black">Organisms/Environments</a></li>
+                  <li><a href="./matterenergy.html" class="nav-link px-2 text-black">Matter/Energy</a></li>
+                </ul>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <div class="px-4 pt-5 my-1 text-center border-bottom text-bg-light">
+            <h1 class="display-4 fw-bold">Matter and Energy</h1>
+            <div class="col-lg-10 mx-auto">
+              <p class="lead mb-4">
+                Everything around us is made up of matter and energy. Matter is anything that takes up space, like the toys you play with or the food you eat. Energy is the ability to do work, like the heat that makes your food cook or the light that helps you see. Scientists who study matter and energy are like explorers, trying to understand how these fundamental elements work and how they interact with each other. Their discoveries help us better understand the world around us and develop new technologies that enhance our lives.</p>
+            </div>
+            <div class="overflow-hidden" >
+              <div class="container px-5">
+                <!-- have to modify pic -->
+                <img src='<%= require("./images/energypic.jpg") %>' class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="100%" height="500" background-position="top" loading="lazy">
+              </div>
+            </div>
+        </div>
+
+        <!-- Bottom Sections -->
+        <!-- Experiment 1: States of Matter: Melting Race -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>1. States of Matter: Melting Race</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> How does different substances affect the melting rate of ice?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Place an ice cube in each bowl or cup.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Sprinkle salt on one ice cube, sugar on another, and leave one ice cube as a control.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">3. Observe and time how fast each ice cube melts.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Ice cubes</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Timer or stopwatch</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Salt</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Sugar</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Water</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Small bowls or cups</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- Did the ice cubes melt at the same rate?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Which substance caused the ice to melt fastest/slowest?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- How do different substances affect the melting of ice?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 1 -->
+
+
+        <!-- Experiment 2: Sound and Vibration Experiment -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>2. Sound and Vibration Experiment</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> How do different rubber bands produce sound?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Stretch rubber bands around the tissue box or shoebox in different ways.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Pluck each rubber band and listen to the sound it produces.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">3. Observe how the thickness and size of the rubber bands affect the sound.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Rubber bands of different sizes and thicknesses</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Empty tissue box or shoebox</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Scissors</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- What differences in sound did you notice between the various rubber bands?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- How did the size and thickness of the rubber bands impact the sound they produced?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- What causes the rubber bands to vibrate and produce sound?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 2 -->
+
+
+        <!-- Experiment 3: Dissolving Different Solids in Water -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>3. Dissolving Different Solids in Water</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> How do different solids dissolve in water?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Add one type of solid to each cup of water (use the same amount of water for each).</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Stir each solution and observe the speed and completeness of dissolving.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Various solids (salt, sugar, coffee, flour, etc.)</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Water</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Transparent cups or containers</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- Did all the solids dissolve completely?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Which solid dissolved fastest? Slowest?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- What factors might affect how quickly a solid dissolves in water?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 3 -->
+
+
+        <!-- Experiment 4: Making a Simple Circuit -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>4. Making a Simple Circuit</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> How does a circuit work to create light?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Cut out a small cardboard shape (e.g., a star or heart).</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Create a simple circuit by connecting the battery, lightbulb, and wires (use alligator clips or foil to connect).</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">3. When the circuit is complete, the lightbulb should light up.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Battery (AA or AAA)</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Lightbulb</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Wires with alligator clips or foil</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Cardboard</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Scissors</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- How does the circuit need to be connected for the lightbulb to turn on?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- What materials are necessary for the light to turn on?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- What happens if you break the circuit?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 4 -->
+
+
+        <!-- Experiment 5: Magnetic Attraction Experiment -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>5. Magnetic Attraction Experiment</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> What objects are attracted to magnets?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Test the different objects by placing the magnet near them.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Observe which objects are attracted to the magnet and which are not.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Various objects (paper clips, coins, plastic items, wood, aluminum foil, etc.)</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Magnets (bar magnets, horseshoe magnets, or magnetic wands)</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- Which objects were attracted to the magnet?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Did different magnets attract different objects?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- What materials seem to be magnetic and which ones aren't?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 5 -->
+
+
+
+
+
+        <footer class="row justify-content-center">
+            <div class="p-5 col-auto">
+                <p>Brought to you by Mr. Barcenas</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

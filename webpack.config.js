@@ -52,5 +52,25 @@ module.exports = {
         filename: 'index.html',
         template: 'src/template.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      filename: 'earthspace.html',
+      template: 'src/earthspace.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      filename: 'forcemotion.html',
+      template: 'src/forcemotion.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      filename: 'organisms.html',
+      template: 'src/organisms.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      filename: 'matterenergy.html',
+      template: 'src/matterenergy.html',
+    }),
   ],
 };

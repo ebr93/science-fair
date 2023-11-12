@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Webpack App</title>
+<script defer src="bundleacc940e416ba7928bf8d.js"></script></head>
+<body>
+    <div class="container text-bg-light py-4">
+        <!-- Nav -->
+        <header class="p-3 text-bg-light">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none">
+                  <!-- have to modify pic -->
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="./earthspace.html" class="nav-link px-2 text-black">Earth/Space</a></li>
+                    <li><a href="./forcemotion.html" class="nav-link px-2 text-black">Force/Motion</a></li>
+                    <li><a href="./organisms.html" class="nav-link px-2 text-black">Organisms/Environments</a></li>
+                    <li><a href="./matterenergy.html" class="nav-link px-2 text-black">Matter/Energy</a></li>
+                </ul>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <div class="px-4 pt-5 my-1 text-center border-bottom text-bg-light">
+            <h1 class="display-4 fw-bold">Earth and Space</h1>
+            <div class="col-lg-10 mx-auto">
+                <p class="lead mb-4">
+                Imagine you're an astronaut floating in space, gazing down at our beautiful planet Earth. Scientists who study Earth and Space are like explorers, venturing into the vastness of space and delving into the depths of our planet. They use telescopes to observe distant stars and galaxies, satellites to map Earth's surface, and special tools to study the rocks and minerals that make up our planet.
+                </p>
+                <p class="lead mb-4">
+                    Their discoveries help us understand how our Earth was formed, how it changes over time, and what lies beyond our planet. They study the Earth's atmosphere, which protects us from harmful radiation, and explore the oceans, which cover most of our planet and teem with life. They also investigate the Sun, which provides us with light and warmth, and the Moon, which orbits Earth and affects our tides.
+                </p>
+            </div>
+            <div class="overflow-hidden" >
+                <div class="container px-5">
+                  <!-- have to modify pic, the way src is typed forces lodash to load pic from html -->
+                  <img src='earth-935468_1280.jpg' class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="100%" height="500" background-position="bottom" loading="lazy">
+                </div>
+              </div>
+        </div>
+
+        <!-- Bottom Sections -->
+        <!-- Experiment 1: Phases of the Moon -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>1. Phases of the Moon</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> How do the phases of the moon change?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Use the marker to label eight positions (New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, Waning Crescent) on the styrofoam/tennis ball to represent the phases of the moon.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Use the lamp or flashlight to represent the sun. Place the ball on a table and the lamp on one side.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">3. Use the pencil to represent the Earth and place it between the ball and the lamp. Rotate the ball around the pencil while observing the changes in the moon's appearance.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Styrofoam balls or tennis balls</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Lamp or flashlight</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Marker</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Clay or play-dough</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Pencil</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- What causes the phases of the moon?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Can you describe each phase you see?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Why do the phases of the moon change?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 1 -->
+
+
+        <!-- Experiment 2: Solar System Mobile -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>2. Solar System Mobile</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> What is the order of the planets in our solar system?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Cut out circular shapes from the cardboard or paper to represent each planet.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Color and label each planet.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">3. Attach the planets to the string at different lengths (using tape or by punching holes in the cardboard and tying the string) to create a mobile.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">4. Hang the mobile and observe the arrangement of the planets.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+              <ul>
+                <p class="lead mb-3"><b>Materials:</b></p>
+                <li>
+                  <p class="lead mb-2">- Cardboard or sturdy paper</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- String</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Scissors</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Colored pencils/markers</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Pictures or drawings of planets (or draw them yourself)</p>
+                </li>
+              </ul>
+
+              <ul>
+                <p class="lead mb-3"><b>Observation Questions:</b></p>
+                <li>
+                  <p class="lead mb-2">- What is the order of the planets from the sun?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- Which planet is closest to the sun? Farthest?</p>
+                </li>
+                <li>
+                  <p class="lead mb-2">- What are some differences between the planets?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Experiment 2 -->
+
+
+        <!-- Experiment 3: DIY Comets -->
+        <div class="row align-items-md-stretch border-bottom">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-light rounded-3">
+              <h4 class="lead mb-4"><b>3. DIY Comets</b></h4>
+
+              <p class="lead mb-3"><b>Question Explored:</b> How are comets formed and what are they made of?</p>
+
+              <ul>
+                <p class="lead mb-3"><b>Instructions:</b></p>
+                <li>
+                  <p class="lead mb-3">1. Put dry ice (if available) in a container. If not, mix water, dirt/sand, and rocks in the container to make a mixture resembling a comet's composition.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">2. Use the spoon to shape the mixture into a ball or irregular shape.</p>
+                </li>
+                <li>
+                  <p class="lead mb-3">3. If using dry ice, observe how it sublimates and creates a tail (you may skip this step if not using dry ice).</p>
+              
+                </ul>
+              </div>
+            </div>
+          
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+                <ul>
+                  <p class="lead mb-3"><b>Materials:</b></p>
+                  <li>
+                    <p class="lead mb-2">- Dry ice (if available)</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Water</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Dirt or sand</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Rocks</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Plastic container or bowl</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Gloves (for handling dry ice)</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Spoon</p>
+                  </li>
+                </ul>
+          
+                <ul>
+                  <p class="lead mb-3"><b>Observation Questions:</b></p>
+                  <li>
+                    <p class="lead mb-2">- What happened when dry ice was placed in the container?</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- What did you observe in the process?</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- How does this relate to a real comet?</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End of Experiment 3 -->
+          
+          
+          <!-- Experiment 4: Layers of the Earth -->
+          <div class="row align-items-md-stretch border-bottom">
+            <div class="col-md-6">
+              <div class="h-100 p-5 text-bg-light rounded-3">
+                <h4 class="lead mb-4"><b>4. Layers of the Earth</b></h4>
+          
+                <p class="lead mb-3"><b>Question Explored:</b> What are the layers of the Earth?</p>
+          
+                <ul>
+                  <p class="lead mb-3"><b>Instructions:</b></p>
+                  <li>
+                    <p class="lead mb-3">1. Use different colors of play-dough or clay to represent the Earth's layers (crust, mantle, outer core, inner core).</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-3">2. Build a model of the Earth by layering the play-dough.</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-3">3. Use the plastic knife or ruler to cut the model in half to reveal the layers.</p>
+                  </li>
+                </ul>
+          
+              </div>
+            </div>
+          
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+                <ul>
+                  <p class="lead mb-3"><b>Materials:</b></p>
+                  <li>
+                    <p class="lead mb-2">- Play-dough or clay (multiple colors)</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Plastic knife or ruler</p>
+                  </li>
+                </ul>
+          
+                <ul>
+                  <p class="lead mb-3"><b>Observation Questions:</b></p>
+                  <li>
+                    <p class="lead mb-2">- How many layers did you observe in the Earth model?</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Which layer is the thinnest? Thickest?</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- What materials did you use to represent each layer, and why?</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End of Experiment 4 -->
+          
+          
+          <!-- Experiment 5: Water Cycle in a Bag -->
+          <div class="row align-items-md-stretch border-bottom">
+            <div class="col-md-6">
+              <div class="h-100 p-5 text-bg-light rounded-3">
+                <h4 class="lead mb-4"><b>5. Water Cycle in a Bag</b></h4>
+          
+                <p class="lead mb-3"><b>Question Explored:</b> How does the water cycle work?</p>
+          
+                <ul>
+                  <p class="lead mb-3"><b>Instructions:</b></p>
+                  <li>
+                    <p class="lead mb-3">1. Fill a quarter of the bag with water. Add a few drops of food coloring if desired.</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-3">2. Seal the bag and tape it to a window where it can receive sunlight.</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-3">3. Observe over a few days for changes within the bag (evaporation, condensation, precipitation).</p>
+                  </li>
+                </ul>
+          
+              </div>
+            </div>
+          
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3 text-bg-light">
+                <ul>
+                  <p class="lead mb-3"><b>Materials:</b></p>
+                  <li>
+                    <p class="lead mb-2">- Ziplock bag</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Water</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Blue food coloring (optional)</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Tape</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- Marker</p>
+                  </li>
+                </ul>
+          
+                <ul>
+                  <p class="lead mb-3"><b>Observation Questions:</b></p>
+                  <li>
+                    <p class="lead mb-2">- What changes did you observe inside the bag over time?</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- How is the water cycle demonstrated in this experiment?</p>
+                  </li>
+                  <li>
+                    <p class="lead mb-2">- What part of the water cycle did you observe first?</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End of Experiment 5 -->
+  
+
+
+
+
+        
+        
+          <footer class="row justify-content-center">
+            <div class="p-5 col-auto">
+                <p>Brought to you by Mr. Barcenas</p>
+            </div>
+        </footer>
+    </div>
+    
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
